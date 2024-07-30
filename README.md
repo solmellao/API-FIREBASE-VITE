@@ -1,11 +1,65 @@
-# React + Vite
+# Proyecto de Tareas con Firebase y Node.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de gestión de tareas (CRUD) utilizando Firebase como backend y Node.js con npm para la gestión de dependencias. La aplicación permite crear, leer, actualizar y eliminar tareas.
 
-Currently, two official plugins are available:
+## Estructura del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```plaintext
+.
+├── index.html
+├── src
+│   ├── firebaseConfig.js
+│   ├── main.js
+├── package.json
+├── vite.config.js
+└── README.md 
+```
+
+## INSTALACION
+
+1- Clona este repositorio en tu máquina local.
+
+    git clone https://github.com/tu-usuario/tu-repositorio.git
+    cd tu-repositorio
+
+2-Instala las dependencias necesarias con npm.
+
+    npm install
+
+
+3- Configura Firebase siguiendo los pasos a continuación.
+
+  ## Configuración de Firebase
+  
+A- Crea un proyecto en Firebase Console.
+
+B- Agrega una aplicación web a tu proyecto Firebase y copia la configuración de Firebase.
+
+C- En el archivo src/firebaseConfig.js, reemplaza la configuración con tu propia configuración de Firebase:
+
+
+4- Uso
+
+A- Inicia el servidor de desarrollo.
+B- Abre tu navegador y ve a http://localhost:3000 para ver la aplicación.
+
+
+5- Estructura del Código
+
+## index.html
+    El archivo HTML contiene la estructura de la aplicación y el formulario para gestionar las tareas.
+
+## src/firebaseConfig.js
+    Este archivo contiene la configuración de Firebase y las funciones necesarias para interactuar con Firestore.
+
+## src/main.js
+    Este archivo contiene la lógica para crear, leer, actualizar y eliminar tareas.
+
+
+
+
+
+
 
 
 
