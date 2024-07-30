@@ -75,7 +75,7 @@ B- Abre tu navegador y ve a http://localhost:3000 para ver la aplicación.
 
 
 ## Tecnologías
-* Frontend: HTML, CSS, JavaScript (con un framework como React o Vue opcional)
+* Frontend: HTML, CSS, JavaScript (con un framework como React)
 * Backend: Firebase Firestore
 * Herramientas: Node.js, npm, Vite
 
