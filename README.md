@@ -14,6 +14,19 @@ Este proyecto es una aplicación de gestión de tareas (CRUD) utilizando Firebas
 ├── vite.config.js
 └── README.md 
 ```
+ ## Descripción del diagrama:
+
+* index.html: Punto de entrada de la aplicación.
+* src: Contiene la lógica de la aplicación. components: Componentes reutilizables (Task, TaskForm, TaskList).
+* Task: Representa una tarea individual.
+* TaskForm: Formulario para crear y editar tareas.
+* TaskList: Lista de todas las tareas.
+* styles: Hojas de estilo CSS.
+* firebaseConfig.js: Configuración de Firebase.
+* main.js: Lógica principal de la aplicación.
+* package.json: Gestión de dependencias.
+* vite.config.js: Configuración del servidor de desarrollo.
+
 
 ## INSTALACION
 
@@ -61,7 +74,10 @@ B- Abre tu navegador y ve a http://localhost:3000 para ver la aplicación.
 
 
 
-
+## Tecnologías
+* Frontend: HTML, CSS, JavaScript (con un framework como React o Vue opcional)
+* Backend: Firebase Firestore
+* Herramientas: Node.js, npm, Vite
 
 Explicación
 Leer (Read):
