@@ -1,8 +1,9 @@
-import { db, collection, addDoc, getDocs, query, onSnapshot, doc, updateDoc, deleteDoc } from './firebaseConfig.js';
+import { db, collection, addDoc, getDocs, query, doc, updateDoc, deleteDoc, getDoc } from './firebaseConfig.js';
 
 // Crear
 
 const todoForm = document.getElementById('todo_form');
+const tasksContainer = document.getElementById('tasks_container');
 
 const create = async (name, url, description) => {
     try {
@@ -26,9 +27,8 @@ todoForm.addEventListener('submit', async e => {
     await create(name, url, description);
 
     todoForm.reset();
+    readTasks(); // Recargar las tareas
 });
-
-
 
 // Leer
 const readTasks = async () => {
