@@ -7,7 +7,7 @@ const tasksContainer = document.getElementById('tasks_container');
 
 const create = async (name, url, description) => {
     try {
-        const docRef = await addDoc(collection(db, 'tasks'), {
+        const docRef = await addDoc(collection(db, 'usuario'), { //se actualizo el nombre de la  nueva coleccion de firebase
             name,
             url,
             description
@@ -86,6 +86,8 @@ const handleDelete = async (e) => {
 
     readTasks(); // Recargar las tareas
 };
+
+
 
 // Cargar tareas cuando se carga la página
 window.addEventListener('DOMContentLoaded', readTasks);
