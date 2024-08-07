@@ -11,23 +11,36 @@
     <main class="row justify-content-start">
         <div class="container m-1 col-4 p-4 border border-danger rounded">
             <form id="todo_form">
-                <label for="todo_name" class="form-label">Nombre de tarea</label>
+                <label for="todo_nombre_completo" class="form-label">Nombre Completo</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text">🏷</span>
-                    <input type="text" id="todo_name" placeholder="Nombre de tarea" class="form-control" required>
+                    <input type="text" id="todo_nombre_completo" placeholder="Nombre Completo" class="form-control" required>
                 </div>
 
-                <label for="todo_url" class="form-label">URL (opcional)</label>
+                <label for="todo_usuario" class="form-label">Usuario</label>
                 <div class="input-group mb-3">
-                    <span class="input-group-text">🔗</span>
-                    <input type="url" id="todo_url" placeholder="URL (opcional)" class="form-control">
+                    <span class="input-group-text">👤</span>
+                    <input type="text" id="todo_usuario" placeholder="Usuario" class="form-control" required>
                 </div>
 
-                <label for="todo_description" class="form-label">Descripción de tarea</label>
+                <label for="todo_contraseña" class="form-label">Contraseña</label>
                 <div class="input-group mb-3">
-                    <span class="input-group-text">📝</span>
-                    <textarea rows="1" id="todo_description" placeholder="Descripción" class="form-control" required></textarea>
+                    <span class="input-group-text">🔒</span>
+                    <input type="password" id="todo_contraseña" placeholder="Contraseña" class="form-control" required>
                 </div>
+
+                <label for="todo_mail" class="form-label">Mail</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">📧</span>
+                    <input type="email" id="todo_mail" placeholder="Mail" class="form-control" required>
+                </div>
+
+                <label for="todo_fecha_de_nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">📅</span>
+                    <input type="date" id="todo_fecha_de_nacimiento" placeholder="Fecha de Nacimiento" class="form-control" required>
+                </div>
+
                 <div class="">
                     <button type="submit" id='btn_todo_form' class="btn btn-danger col-12">Guardar</button>
                 </div>
